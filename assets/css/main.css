@@ -1,0 +1,15 @@
+div.title{
+    font-family: 'Libre Barcode 128 Text', cursive;
+    font-size: 50px;
+    margin:10px;
+    width:fit-content;
+}    
+uk-navbar-container{
+    display:flex;
+}
+
+uk-navbar-right,title{
+    flex:1;
+}
+    /* font-family: 'Italianno', cursive; */
+
