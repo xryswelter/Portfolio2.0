@@ -1,15 +1,114 @@
+
+/*Main Format- NavBar  */
+.container{
+    margin: auto;
+    position: relative;
+}
+
+/* .header-lock{
+    position: fixed;
+} */
+
+
 div.title{
     font-family: 'Libre Barcode 128 Text', cursive;
-    font-size: 50px;
-    margin:10px;
+    /* font-size: 125px; */
+    margin: 20px auto;
     width:fit-content;
+    text-align: center;
 }    
-uk-navbar-container{
-    display:flex;
-}
-
-uk-navbar-right,title{
-    flex:1;
-}
     /* font-family: 'Italianno', cursive; */
 
+.nav:hover{
+    background-color:blue;
+}
+
+.navbar-horizonal{
+    flex-direction: row;
+    display:flex;
+    justify-content: space-between;
+    padding: 0px;
+    margin:20px;
+    /* border: 1px solid black; */
+}
+
+#resume{
+    position: relative;
+}
+#list{
+    position: absolute;
+    width:100%;
+    flex-direction: column;
+    display:flex;
+}
+.nav-link{
+    flex:1;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 32px;
+}
+
+.links{
+    padding:0;
+    margin:auto 0px;
+    z-index: 1;
+    
+}
+nav > .li{
+    padding:0;
+}
+.active{
+    pointer-events: none;
+    cursor: default;
+}
+.linx{
+    text-align:center;
+    z-index: 1;
+    font-size: 24px;
+    padding:0px;
+    font-weight:400;
+}
+/* Media Query/Reponsiveness */
+@media(min-width:300px){
+    .linx{
+        text-align:center;
+        font-size: 16px;
+        font-weight:thinner; 
+    }
+    .nav-link{
+        flex:1;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 18px;
+        }
+    div.title{
+        font-family: 'Libre Barcode 128 Text', cursive;
+        font-size: 65px;
+        margin: 20px auto;
+        width:fit-content;
+        text-align: center;
+    }  
+    .container{
+        width:100%
+    }
+    .navbar-horizonal{
+        margin:0px;
+    }
+}
+.nav-link + .nav-link{
+    border-left: 1px solid black;
+}
+@media(min-width:900px){
+    div.title{
+        font-size: 75px;
+    }    
+    .container{
+        width:95%
+        }
+}
+@media(min-width:1200px){
+    div.title{
+        font-size: 125px;
+    }    
+    
+}
